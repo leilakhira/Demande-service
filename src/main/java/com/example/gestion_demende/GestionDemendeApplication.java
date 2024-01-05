@@ -16,7 +16,6 @@ public class GestionDemendeApplication{
     public static void main(String[] args) {
         SpringApplication.run(GestionDemendeApplication.class, args);
     }
-    @Bean
     CommandLineRunner start(DemandeRepository demandeRepository) {
         return args -> {
             Demande demande = new Demande("khira","leila",22,"0669884978","118 route de narbonne",new Date(),"une demande d'urgence pour Récupérer un colis pour une personne hospitalisée",Demande_Status.en_attente);
